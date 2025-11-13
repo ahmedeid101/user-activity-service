@@ -4,7 +4,7 @@ import routes from './infrastructure/http/producerRouter.js';
 import producerRouter from './infrastructure/http/producerRouter.js';
 import { connectDb } from './infrastructure/mongodb/mongoClient.js';
 import { ProcessedLogRepository } from './infrastructure/mongodb/ProcessedLogRepository.js';
-import { ProcessActivityUseCase } from './application/ProcessActivityUseCase.js';
+import { ProcessActivityUseCase } from './application/ProcessActivity.js';
 import { startConsumer } from './infrastructure/kafka/consumer.js';
 import { config } from './config/index.js';
 
