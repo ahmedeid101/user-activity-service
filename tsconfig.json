@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}
+
+
+// {
+// "compilerOptions": {
+// "target": "ES2022",
+// "module": "ESNext",
+// "moduleResolution": "node",
+// "lib": ["es2022"],
+// "outDir": "dist",
+// "rootDir": "src",
+// "strict": true,
+// "esModuleInterop": true,
+// "skipLibCheck": true,
+// "resolveJsonModule": true,
+// "noImplicitAny": false
+// }
+// }
