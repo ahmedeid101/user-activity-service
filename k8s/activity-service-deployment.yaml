@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: activity-service
-          image: <your-dockerhub-username>/activity-service:latest
+          image: ahmedeid101/activity-service:latest
           envFrom:
             - secretRef:
                 name: activity-service-env
