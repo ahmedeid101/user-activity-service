@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ProcessedLogRepository } from '../../persistence/ProcessedLogRepository.js';
+import { ProcessedLogRepository } from '../mongodb/ProcessedLogRepository.js';
 
 const repo = new ProcessedLogRepository();
 

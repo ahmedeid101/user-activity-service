@@ -1,5 +1,5 @@
-import { ProcessedLog } from '../../domains/entities/ProcessedLog.js';
-import { IProcessedLogRepository } from '../../domains/repositories/IProcessedLogRepository.js';
+import { ProcessedLog } from '../domains/entities/ProcessedLog.js';
+import { IProcessedLogRepository } from '../domains/repositories/IProcessedLogRepository.js';
 
 
 export class ProcessActivityUseCase {

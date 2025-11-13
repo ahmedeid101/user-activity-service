@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+# Build output
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*.local
+.env.docker
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.*.yml
+
+# Kafka data (if running locally)
+kafka-logs/
+zookeeper-logs/
+
+# MongoDB local files (if using local db)
+*.wt
+*.lock
+*.ns
+*.0
+*.1
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Optional: coverage
+coverage/

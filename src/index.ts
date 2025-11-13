@@ -1,10 +1,10 @@
 import express from 'express';
 import pino from 'pino';
-import routes from './infrastructure/http/routes.js';
-import {producerApi} from './infrastructure/producerApi.js';
-import { connectDb } from './infrastructure/persistence/mongoClient.js';
-import { ProcessedLogRepository } from './infrastructure/persistence/ProcessedLogRepository.js';
-import { ProcessActivityUseCase } from './application/usecases/ProcessActivityUseCase.js';
+import routes from './infrastructure/http/producerRouter.js';
+import producerRouter from './infrastructure/http/producerRouter.js';
+import { connectDb } from './infrastructure/mongodb/mongoClient.js';
+import { ProcessedLogRepository } from './infrastructure/mongodb/ProcessedLogRepository.js';
+import { ProcessActivityUseCase } from './application/ProcessActivityUseCase.js';
 import { startConsumer } from './infrastructure/kafka/consumer.js';
 import { config } from './config/index.js';
 
@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 app.use('/api', routes);
-app.use('/producer', producerApi);
+app.use('/producer', producerRouter);
 
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
