@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-name: activity-config
-data:
-KAFKA_BROKERS: kafka:9092
-KAFKA_CLIENT_ID: activity-service
-KAFKA_TOPIC: user-activity
